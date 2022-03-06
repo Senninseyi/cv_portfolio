@@ -5,6 +5,22 @@ module.exports = {
   presets: [],
   darkMode: 'class', // or 'class'
   theme: {
+    extend: {
+      colors: {
+        lightmode: {
+          primary: '#ffffff', //lightmode primary color,
+          secondary: '#21243D', //lightmode secondary color, darkblue
+          accents: '#FF6464', //lightmode accent color,
+          others: '#00A8CC', //lightmode other color, cyanblue
+        },
+        modedark: {
+          primary: '#21243D', //darkmode primary color, darkblue
+          secondary: '#00A8CC', //darkmode secondary color, cyanblue
+          accents: '#FF6464', //darkmode accent color,
+          others: '#ffffff', //darkmode other color,
+        }
+      }
+    },
     screens: {
       sm: '640px',
       md: '768px',
