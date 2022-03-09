@@ -1,10 +1,15 @@
-import './App.css';
-import Header from './components/navigation';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Portfolio from './pages/main';
+import Works from "./pages/works";
 
 function App() {
   return (
     <div>
-      <Header/>
+      <Routes>
+        <Route path="/" element={<Portfolio/>}/>
+        <Route path="/works" element={<Works/>}/>
+      </Routes>
     </div>
   );
 }
