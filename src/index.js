@@ -5,12 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from './theming/themeContext';
 import Background from './theming/background';
+import { BrowserRouter } from "react-router-dom"
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider>
       <Background>
-        <App />
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
       </Background>
     </ThemeProvider>
   </React.StrictMode>,
