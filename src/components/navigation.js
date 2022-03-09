@@ -3,6 +3,7 @@ import ToggleTheme from "./themeToggler";
 import Logo from "../assets/logo.svg"
 import { CgMenuRight,CgClose } from 'react-icons/cg'
 import { NavItems } from "./navs/navItems";
+import { Link } from "react-router-dom";
 
 
 const Header = () => {
@@ -19,7 +20,9 @@ const Header = () => {
         <div className="w-full flex justify-center shadow-md bg-lightmode-primary dark:bg-modedark-primary fixed top-0 left-0">
             <div className="w-full flex justify-between items-center max-w-6xl h-24 px-8">
                 <div className="flex items-center">
-                    <img src={Logo} className="w-14 h-14" alt="logo"/>
+                    <Link to='/'>
+                        <img src={Logo} className="w-14 h-14" alt="logo"/>
+                    </Link>
                     {/* <h2 className="font-bold ml-4 text-2xl">Fuhrer Dev</h2> */}
                 </div>
                 {/* desktop nav */}
