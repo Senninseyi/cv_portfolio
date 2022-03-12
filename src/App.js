@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Portfolio from './pages/main';
 import Works from "./pages/works";
+import './App.css'
 
 function App() {
   return (

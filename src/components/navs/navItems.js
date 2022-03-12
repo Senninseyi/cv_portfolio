@@ -20,8 +20,9 @@ export const NavItems = () => {
 
     return (
         <li className="text-lg w-full h-44 items-start justify-between capitalize lg:h-auto flex flex-col lg:flex-row lg:justify-between font-semibold">
-            {Links.map(i => (
-                <NavLink 
+            {Links.map((i,c) => (
+                <NavLink
+                    key={c} 
                     className={({isActive}) => isActive ? 'text-lightmode-accents' : 'text-black dark:text-white'}
                     to={i.link}>
                         {i.linkName}

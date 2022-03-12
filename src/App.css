@@ -1,38 +1,21 @@
-.App {
-  text-align: center;
+#animateName {
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#animateName::after{
+  content: "😎";
+  animation: animateName 50s linear infinite;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes animateName {
+  0% { content:"Oluwaseyi";  @apply text-lightmode-others; }
+  10% { content:"Deji"; @apply text-lightmode-accents; }
+  20% { content:"Oyebanji"; @apply text-lightmode-secondary; }
+  30% { content:"Fuhrer_Dev"; @apply text-lightmode-accents; }
+  40% { content:"Senninseyi"; @apply text-lightmode-others; }
+  50% { content: "Mastermind"; @apply text-lightmode-secondary }
+  60% { content: "Rikudoseyi"; @apply text-lightmode-others }
+  70% { content: "Kami_no_hentai"; @apply text-lightmode-accents }
+  80% { content: "Senbonzakura"; @apply text-lightmode-others }
+  90% { content: "Knighttitan"; @apply text-lightmode-secondary }
 }

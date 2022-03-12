@@ -33,7 +33,7 @@ const Header = () => {
                 </nav>
                 {/* mobile nav */}
                 <div className="flex items-center">
-                    <ToggleTheme ToggleClass="mr-4"/>
+                    <ToggleTheme/>
                     <button onClick={() => drawerToggleHandler()} className="lg:hidden flex">
                         <CgMenuRight className="text-lightmode-secondary dark:text-modedark-accents" size={28}/>
                     </button>
